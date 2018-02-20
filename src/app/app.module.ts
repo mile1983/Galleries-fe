@@ -3,10 +3,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { CreateGaleryComponent } from './create-galery/create-galery.component';
-import { AllGalleriesComponent } from './all-galleries/all-galleries.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { AllGalleriesComponent } from './components/all-galleries/all-galleries.component';
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
+import { CreateNewGalleryComponent } from './components/create-new-gallery/create-new-gallery.component';
+import { MyGalleryComponent } from './components/my-gallery/my-gallery.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,16 @@ import { AllGalleriesComponent } from './all-galleries/all-galleries.component';
     LayoutComponent,
     LoginComponent,
     RegisterComponent,
-    CreateGaleryComponent,
-    AllGalleriesComponent
+    AllGalleriesComponent,
+    CreateNewGalleryComponent,
+    MyGalleryComponent
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
