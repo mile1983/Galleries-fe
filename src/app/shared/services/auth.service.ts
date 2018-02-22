@@ -26,7 +26,8 @@ export class AuthService {
   	  	})
 	        .subscribe(
 	          (token: string) => {
-	          	window.localStorage.setItem('loginToken', token);
+				  window.localStorage.setItem('loginToken', token);
+				  this.isAuthenticated = true;
 
 	            o.next(token);
 	            return o.complete();

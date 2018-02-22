@@ -10,6 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { CreateNewGalleryComponent } from './components/create-new-gallery/create-new-gallery.component';
 import { MyGalleryComponent } from './components/my-gallery/my-gallery.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { GalleryService } from './shared/services/gallery.service';
+import { HomePageComponent } from './home-page/home-page.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import { MyGalleryComponent } from './components/my-gallery/my-gallery.component
     RegisterComponent,
     AllGalleriesComponent,
     CreateNewGalleryComponent,
-    MyGalleryComponent
+    MyGalleryComponent,
+    NavBarComponent,
+    HomePageComponent
    
   ],
   imports: [
@@ -28,7 +34,7 @@ import { MyGalleryComponent } from './components/my-gallery/my-gallery.component
     SharedModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GalleryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

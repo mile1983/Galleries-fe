@@ -5,12 +5,15 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-// import { MyGalleriesComponent } from './components/my-galleries/my-galleries.component';
-//import { CreateGaleryComponent } from './components/create-galery/create-galery.component';
+import { MyGalleryComponent } from './components/my-gallery/my-gallery.component';
+import { CreateNewGalleryComponent } from './components/create-new-gallery/create-new-gallery.component';
  import { AllGalleriesComponent } from './components/all-galleries/all-galleries.component';
 
 const appRoutes: Routes = [
   {
+    path: '',
+    component: AllGalleriesComponent
+  },{
     path: 'all-galleries',
     component: AllGalleriesComponent
   },
@@ -21,15 +24,15 @@ const appRoutes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'my-galleries',
+    component: MyGalleryComponent
+  },
+  {
+    path: 'create',
+    component: CreateNewGalleryComponent
   }
-  // {
-  //   path: 'my-galleries',
-  //   component: MyGalleriesComponent
-  // },
-  // {
-  //   path: 'create',
-  //   component: CreateGalleryComponent
-  // }
 ]
 
 @NgModule({
