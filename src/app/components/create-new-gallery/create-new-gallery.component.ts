@@ -13,3 +13,4 @@ export class CreateNewGalleryComponent implements OnInit {
   }
 
 }
+

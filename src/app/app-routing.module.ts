@@ -7,13 +7,22 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MyGalleryComponent } from './components/my-gallery/my-gallery.component';
 import { CreateNewGalleryComponent } from './components/create-new-gallery/create-new-gallery.component';
- import { AllGalleriesComponent } from './components/all-galleries/all-galleries.component';
+import { AllGalleriesComponent } from './components/all-galleries/all-galleries.component';
+//import { HomePageComponent } from './home-page/home-page.component';
 
 const appRoutes: Routes = [
+  
+  
   {
     path: '',
     component: AllGalleriesComponent
-  },{
+  },
+
+//  {
+//     path: '/home',
+//     component: HomePageComponent
+//   }, 
+  {
     path: 'all-galleries',
     component: AllGalleriesComponent
   },

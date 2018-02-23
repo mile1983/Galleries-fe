@@ -3,7 +3,8 @@ import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http'
 import { Gallery } from '../models/gallery.model';
 
 @Injectable()
-export class GalleryService {
+export class GalleryService {    [x: string]: any;
+
 
   constructor(private http: HttpClient,
   ) { }
